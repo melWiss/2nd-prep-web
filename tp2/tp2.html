@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inscription</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form method="POST" action="">
+        <fieldset>
+            <legend>Informations Personnels</legend>
+            <label>Nom:<input type="text" placeholder="Taper votre Nom" name="nom" pattern="[A-Za-Z]{2,}" autofocus  required/></label><br/>
+            <label>Prenom:<input type="text" placeholder="Taper votre Prenom" name="prenom" pattern="[A-Za-Z]{2,}" required/></label><br/>
+            <label>Mot de pass:<input type="password" name="password" pattern=".{5,}"required/></label><br/>
+            <label>CIN:<input type="text" name="cin" placeholder="Saisir votre code CIN ici" pattern="[0-9]{8}" required/></label><br/>
+            <label>Date de naissance:<input type="date" name="bd" required/></label><br/>
+            <label>e-mail:<input type="email" name="email" pattern="[a-z0-9]+@[a-z0-9.-]+\.[a-z0-9" required/></label><br/>
+            <p>Genre:<label>Male<input type="radio" name="genre" value="male" checked/></label><label>Female<input type="radio" name="genre" value="Female"/></label></p><br/>
+            <label>Ville: <select name="city" required>
+                <option value="tunis">Tunis</option>
+                <option value="nabeul">Nabeul</option>
+                <option value="sousse">Sousse</option>
+                <option value="mahdia">Mahdia</option>
+                <option value="monastir">Monastir</option>
+                <option value="sfax">Sfax</option>
+            </select></label><br/>
+            <p>Loisirs: 
+                <label>Sport<input type="checkbox" name="loisir1" value="sport"/></label>
+                <label>Musique<input type="checkbox" name="loisir2" value="musique"/></label>
+                <label>Lecture<input type="checkbox" name="loisir3" value="lecture"/></label>
+                <label>Voyage<input type="checkbox" name="loisir4" value="voyage"/></label>
+            </p><br/>
+            <label>Votre Commentaire<br/>
+                <input type="text" name="comment" placeholder="Saisir votre commentaire ici..."/>
+            </label><br/>
+            <label>Couleur: <input type="color" name="color" required/></label><br/>
+            <p>Niveau d'engalis: <br><label>debutant</label><input type="range" min="1" max="10" name="language_level"/><label>excelent</label></p></fieldset><br/>
+            <input type="submit" value="Submit"/><input type="reset" value="Reset"/>
+        </fieldset>
+    </form>
+</body>
+</html>
