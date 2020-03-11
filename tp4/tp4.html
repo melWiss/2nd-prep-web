@@ -6,15 +6,88 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>mmodele0_vide</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='tp3.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='tp4.css'>
     <script src='main.js'></script>
+    <style>
+        #navigation {
+            height: 80px;
+            width: 100%;
+            background-color: rgb(212, 212, 161);
+        }
+
+        #header {
+            height: 200px;
+            width: 100%;
+            background-color: rgb(252, 157, 69);
+        }
+
+        #home {
+            height: 400px;
+            width: 100%;
+            background-color: rgb(216, 200, 156);
+        }
+
+        #footer {
+            height: 50px;
+            width: 100%;
+            background-color: rgb(219, 247, 65);
+        }
+
+        ul#menu li {
+            display: inline;
+            font-size: 2em;
+            border-right: 2px solid #000000;
+            text-decoration: none;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        ul#headeritems li{
+            display: inline;
+        }
+
+
+        nav {
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        
+        a{
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-    <nav id="div1"></nav>
-    <header id="div2"></header>
-    <section id="div3"></section>
-    <footer id="div4"></footer>
+    <nav id="navigation">
+        <ul id="menu">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Presentation</a></li>
+            <li><a href="#">Nos services</a></li>
+            <li><a href="#">Nos realisation</a></li>
+            <li><a href="#">Ressources</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="header">
+        <ul id="headeritems">
+            <li><img src="images/get_inspired1.jpg" /></li>
+            <li>
+                <H1>Etes vous prêt? GO!</H1>
+            </li>
+        </ul>
+    </header>
+    <section id="home"></section>
+    <footer id="footer"></footer>
 </body>
 
 </html>
